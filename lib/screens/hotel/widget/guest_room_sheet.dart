@@ -1,4 +1,5 @@
 // lib/screens/guest_room_sheet.dart
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -105,7 +106,7 @@ class _GuestRoomSheetState extends State<GuestRoomSheet> {
                  onPressed: () => Navigator.pop(context),
                  child: const Text(
                    'Cancel',
-                   style: TextStyle(color: Colors.black54, fontSize: 16), // tetap abu biar beda
+                   style: TextStyle(color: textColor, fontSize: 16), // tetap abu biar beda
                  ),
                ),
              ),
@@ -158,7 +159,7 @@ class _GuestRoomSheetState extends State<GuestRoomSheet> {
          CircleAvatar(
            radius: 22,
            backgroundColor: iconColor,
-           child: Icon(icon, color: Colors.black54, size: 26),
+           child: Icon(icon, color: textColor, size: 26),
          ),
          const SizedBox(width: 16),
          Expanded(

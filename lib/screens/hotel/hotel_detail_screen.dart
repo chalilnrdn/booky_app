@@ -1,3 +1,4 @@
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 
@@ -87,7 +88,7 @@ class HotelDetailScreen extends StatelessWidget {
                               data['address'],
                               style: TextStyle(
                                 fontSize: 16,
-                                color: Colors.black54,
+                                color: textColor,
                                 fontFamily: 'Inter',
                               ),
                             ),
@@ -115,7 +116,7 @@ class HotelDetailScreen extends StatelessWidget {
                               "(${data['reviews']} reviews)",
                               style: TextStyle(
                                 fontSize: 15,
-                                color: Colors.black45,
+                                color: textColor,
                                 fontFamily: 'Inter',
                               ),
                             ),
@@ -141,7 +142,7 @@ class HotelDetailScreen extends StatelessWidget {
                           "/night",
                           style: TextStyle(
                             fontSize: 15,
-                            color: Colors.black54,
+                            color: textColor,
                             fontFamily: 'Inter',
                           ),
                         ),
@@ -195,7 +196,7 @@ class HotelDetailScreen extends StatelessWidget {
                       "Cum sociis natoque penatibus et magnis dis parturient.",
                       style: TextStyle(
                         fontSize: 16,
-                        color: Colors.black54,
+                        color: textColor,
                         fontFamily: 'Inter',
                         height: 1.5,
                       ),
@@ -328,7 +329,7 @@ class FacilityItem extends StatelessWidget {
           style: TextStyle(
             fontSize: 14,
             fontFamily: 'Inter',
-            color: Colors.black87,
+            color: textColor,
           ),
         ),
       ],

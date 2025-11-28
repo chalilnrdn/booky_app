@@ -4,6 +4,7 @@ import 'package:booky_app/models/hotel_model.dart';
 import 'package:booky_app/screens/hotel/widget/filter_bottom_sheet.dart';
 import 'package:booky_app/screens/hotel/widget/hotel_card.dart';
 import 'package:booky_app/screens/hotel/widget/short_bottom_sheet.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 
@@ -252,7 +253,7 @@ class _HotelsPageState extends State<HotelsPage> {
                    ? const Center(
                        child: Text(
                          "No hotels found",
-                         style: TextStyle(color: Colors.black54),
+                         style: TextStyle(color: textColor),
                        ),
                      )
                    : ListView.builder(

@@ -1,3 +1,4 @@
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 
@@ -45,7 +46,7 @@ class SortBottomSheet extends StatelessWidget {
            padding: EdgeInsets.all(20),
            child: Text(
              "Sort By",
-             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textColor),
            ),
          ),
 
@@ -56,19 +57,19 @@ class SortBottomSheet extends StatelessWidget {
            return ListTile(
              leading: Icon(
                item['icon'],
-               color: Colors.black,
+               color: textColor,
                size: 26,
              ),
              title: Text(
                item['label'],
                style: TextStyle(
-                 color: Colors.black,
+                 color: textColor,
                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
                  fontSize: 16,
                ),
              ),
              trailing: isSelected
-                 ? const Icon(Icons.check, color: Colors.black, size: 28)
+                 ? const Icon(Icons.check, color: textColor, size: 28)
                  : null,
              onTap: () {
                onSortSelected(item['label']);

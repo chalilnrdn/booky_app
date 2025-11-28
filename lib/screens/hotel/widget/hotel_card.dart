@@ -1,3 +1,4 @@
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 
@@ -87,7 +88,7 @@ class HotelCard extends StatelessWidget {
                         address,
                         style: TextStyle(
                           fontSize: 15,
-                          color: Colors.black54,
+                          color: textColor,
                           fontFamily: 'Inter',
                         ),
                         overflow: TextOverflow.ellipsis,
@@ -113,7 +114,7 @@ class HotelCard extends StatelessWidget {
                     Text(
                       "($reviews reviews)",
                       style: TextStyle(
-                        color: Colors.black45,
+                        color: textColor,
                         fontSize: 14,
                         fontFamily: 'Inter',
                       ),
@@ -145,7 +146,7 @@ class HotelCard extends StatelessWidget {
                           "/night",
                           style: TextStyle(
                             fontSize: 15,
-                            color: Colors.black54,
+                            color: textColor,
                             fontFamily: 'Inter',
                           ),
                         ),

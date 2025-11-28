@@ -1,4 +1,5 @@
 import 'package:booky_app/screens/auth/login_screen.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 class VerificationCodeScreen extends StatefulWidget {
@@ -86,7 +87,7 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
 
               Text(
                 "You'll get messages soon on your e-mail address\na flight that matches your destination.",
-                style: TextStyle(fontSize: 14, color: Colors.black),
+                style: TextStyle(fontSize: 14, color: textColor),
               ),
 
               SizedBox(height: 34),
@@ -139,7 +140,7 @@ class _VerificationCodeScreenState extends State<VerificationCodeScreen> {
                         "Login",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: textColor,
                         ),
                       ),
                     ),

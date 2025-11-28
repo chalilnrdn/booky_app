@@ -1,5 +1,6 @@
 import 'package:booky_app/screens/auth/verification_screen.dart';
 import 'package:booky_app/screens/auth/widget/input_field.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
               Text(
                 "You’ll get messages soon on your e-mail address  a flight that matches your destination.",
-                style: TextStyle(fontSize: 14, color: Colors.black),
+                style: TextStyle(fontSize: 14, color: textColor),
               ),
 
               SizedBox(height: 40),

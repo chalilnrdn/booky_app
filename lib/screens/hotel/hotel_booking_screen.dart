@@ -2,6 +2,7 @@ import 'package:booky_app/screens/hotel/hotel_screen.dart';
 import 'package:booky_app/screens/hotel/widget/date_selection_sheet.dart';
 import 'package:booky_app/screens/hotel/widget/guest_room_sheet.dart';
 import 'package:booky_app/screens/hotel/widget/map_selection_screen.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -129,7 +130,7 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
             const SizedBox(height: 8),
             Text(
               'Choose your favorite hotel and enjoy the service',
-              style: GoogleFonts.inter(fontSize: 15, color: Colors.white70),
+              style: GoogleFonts.inter(fontSize: 15, color: textColor),
             ),
             const SizedBox(height: 40),
 

@@ -1,3 +1,4 @@
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -129,7 +130,7 @@ class _DateSelectionSheetState extends State<DateSelectionSheet> {
 
              // Teks hari biasa & weekend
              defaultTextStyle: const TextStyle(
-               color: Colors.black,
+               color: textColor,
                fontWeight: FontWeight.bold,
                fontSize: 15,
              ),
@@ -180,7 +181,7 @@ class _DateSelectionSheetState extends State<DateSelectionSheet> {
                  onPressed: () => Navigator.pop(context),
                  child: const Text(
                    'Cancel',
-                   style: TextStyle(color: Colors.black54, fontSize: 16),
+                   style: TextStyle(color: textColor, fontSize: 16),
                  ),
                ),
              ),

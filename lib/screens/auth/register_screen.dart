@@ -3,6 +3,7 @@ import 'package:booky_app/screens/auth/login_screen.dart';
 import 'package:booky_app/screens/auth/widget/input_field.dart';
 import 'package:booky_app/screens/auth/widget/social_button.dart';
 import 'package:booky_app/screens/home/home_screen.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -38,7 +39,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: GoogleFonts.inter(
                     fontSize: 34,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: textColor,
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -48,7 +49,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Found a flight that matches your destination\nand schedulook it instantly..",
                   style: GoogleFonts.inter(
                     fontSize: 15,
-                    color: Colors.black54,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),
@@ -102,7 +103,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         obscureText: _obscure,
                         suffixIcon: Icon(
                           _obscure ? Icons.visibility_off : Icons.visibility,
-                          color: Colors.black54,
+                          color: textColor,
                           size: 22,
                         ),
                         onTapSuffix: () => setState(() => _obscure = !_obscure),
@@ -181,7 +182,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   children: [
                     Text(
                       "You have an account? ",
-                      style: GoogleFonts.inter(color: Colors.black54),
+                      style: GoogleFonts.inter(color: textColor),
                     ),
                     GestureDetector(
                       onTap: () {
@@ -195,7 +196,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       child: Text(
                         "Login",
                         style: GoogleFonts.inter(
-                          color: Colors.black,
+                          color: textColor,
                           fontWeight: FontWeight.w600,
                           decoration: TextDecoration.underline,
                           decorationThickness: 1,

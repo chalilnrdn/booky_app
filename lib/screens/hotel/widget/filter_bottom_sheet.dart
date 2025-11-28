@@ -1,4 +1,5 @@
 // lib/components/filter_bottom_sheet.dart
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 
 
@@ -52,7 +53,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
          Container(width: 40, height: 5, decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(10))),
          const Padding(
            padding: EdgeInsets.all(20),
-           child: Text("Filter", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black)),
+           child: Text("Filter", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: textColor)),
          ),
 
 
@@ -62,13 +63,13 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
            child: Column(
              crossAxisAlignment: CrossAxisAlignment.start,
              children: [
-               const Text("Budget", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.black )),
+               const Text("Budget", style: TextStyle(fontWeight: FontWeight.w600, color: textColor )),
                const SizedBox(height: 12),
                Row(
                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                  children: [
-                   Text("\$${_minPrice.toInt()}", style: const TextStyle(fontWeight: FontWeight.w600,  color: Colors.black)),
-                   Text("\$${_maxPrice.toInt()}", style: const TextStyle(fontWeight: FontWeight.w600,  color: Colors.black)),
+                   Text("\$${_minPrice.toInt()}", style: const TextStyle(fontWeight: FontWeight.w600,  color: textColor)),
+                   Text("\$${_maxPrice.toInt()}", style: const TextStyle(fontWeight: FontWeight.w600,  color: textColor)),
                  ],
                ),
                RangeSlider(
@@ -116,7 +117,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
          // Facilities
          const Padding(
            padding: EdgeInsets.symmetric(horizontal: 20),
-           child: Align(alignment: Alignment.centerLeft, child: Text("Others", style: TextStyle(fontWeight: FontWeight.w600,  color: Colors.black))),
+           child: Align(alignment: Alignment.centerLeft, child: Text("Others", style: TextStyle(fontWeight: FontWeight.w600,  color: textColor))),
           
          ),
          const SizedBox(height: 12),
@@ -138,7 +139,7 @@ class _FilterBottomSheetState extends State<FilterBottomSheet> {
                Expanded(
                  child: TextButton(
                    onPressed: () => Navigator.pop(context),
-                   child: const Text("Cancel", style: TextStyle(color: Colors.black54, fontSize: 16)),
+                   child: const Text("Cancel", style: TextStyle(color: textColor, fontSize: 16)),
                  ),
                ),
                const SizedBox(width: 12),
@@ -177,7 +178,7 @@ Widget _facilityTile(String title, IconData icon) {
    leading: Icon(icon, color: Colors.black),
    title: Text(
      title,
-     style: const TextStyle(color: Colors.black, fontSize: 16),
+     style: const TextStyle(color: textColor, fontSize: 16),
    ),
    trailing: SizedBox(
      width: 26,

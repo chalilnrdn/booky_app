@@ -3,6 +3,7 @@ import 'package:booky_app/screens/auth/register_screen.dart';
 import 'package:booky_app/screens/auth/widget/input_field.dart';
 import 'package:booky_app/screens/auth/widget/social_button.dart';
 import 'package:booky_app/screens/home/home_screen.dart';
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -48,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   "Found a flight that matches your destination\nand schedulook it instantly.",
                   style: GoogleFonts.inter(
                     fontSize: 15,
-                    color: Colors.black54,
+                    color: textColor,
                     height: 1.5,
                   ),
                 ),
@@ -81,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         obscureText: _obscure,
                         suffixIcon: Icon(
                           _obscure ? Icons.visibility_off : Icons.visibility,
-                          color: Colors.black54,
+                          color: textColor,
                           size: 22,
                         ),
                         onTapSuffix: () => setState(() => _obscure = !_obscure),
@@ -155,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text(
                         "Forgot password?",
                         style: GoogleFonts.inter(
-                          color: Colors.black,
+                          color: textColor,
                           fontWeight: FontWeight.w600,
                           fontSize: 14,
                         ),
@@ -193,7 +194,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Text(
                       "Don't have an account? ",
-                      style: GoogleFonts.inter(color: Colors.black54),
+                      style: GoogleFonts.inter(color: textColor),
                     ),
                     GestureDetector(
                       onTap: () {

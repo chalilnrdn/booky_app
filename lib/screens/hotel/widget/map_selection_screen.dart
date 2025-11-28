@@ -1,3 +1,4 @@
+import 'package:booky_app/utils/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -67,13 +68,13 @@ class _MapSelectionScreenState extends State<MapSelectionScreen> {
              child: TextField(
                controller: _controller,
                autofocus: true,
-               style: const TextStyle(color: Colors.black, fontSize: 16),
+               style: const TextStyle(color: textColor, fontSize: 16),
                cursorColor: Colors.black,
                decoration: InputDecoration(
                  hintText: 'Search your destination',
                  hintStyle: const TextStyle(color: Colors.grey),
                  border: InputBorder.none,
-                 prefixIcon: const Icon(Icons.search, color: Colors.black54),
+                 prefixIcon: const Icon(Icons.search, color: textColor),
                  contentPadding: const EdgeInsets.symmetric(vertical: 16),
                ),
              ),
